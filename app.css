@@ -17,6 +17,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 }
 
 nav {
@@ -106,9 +107,9 @@ form button {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  height: 1rem;
   width: 100%;
+  margin-top: -50px;
 }
 
 .attribution {
@@ -121,9 +122,6 @@ footer {
 
 @media (min-width: 1440px) {
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,6 +140,7 @@ footer {
     width: 90%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .container {
@@ -171,7 +170,9 @@ footer {
   }
 
   footer {
+    /* position: absolute;
+    bottom: -50px;
     height: 2rem;
-    margin-top: 2rem;
+    margin-top: 2rem; */
   }
 }
