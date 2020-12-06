@@ -106,6 +106,32 @@ form button {
   outline: none;
 }
 
+.error-msg,
+.error-icon {
+  position: absolute;
+  display: none;
+}
+
+.error-msg {
+  left: 25px;
+  bottom: -25px;
+  color: hsl(0, 74%, 74%);
+}
+
+.error-icon {
+  right: 80px;
+  bottom: 12px;
+}
+
+.error-msg.error,
+.error-icon.error {
+  display: initial;
+}
+
+form input.error {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
 footer {
   height: 1rem;
   width: 100%;
